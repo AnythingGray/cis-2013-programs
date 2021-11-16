@@ -18,7 +18,7 @@ intMin = parseInt(prompt("Choose the Lowest number for your number range, must b
 //must be number, and larger than zero
 while (isNaN(intMin) || intMin<0)
 {
-    intMin = parseInt(prompt("I'm sorry but your lowest number choice is invalid. Please choose another number")); //invalid number alert
+    intMin = parseInt(prompt("Invalid Low number entry try again. Do it right this time")); //invalid number alert
 }
 
 /* the following section prompts the user to enter the high number of their guessing range
@@ -30,7 +30,7 @@ while (isNaN(intMin) || intMin<0)
 intMax = parseInt(prompt("Choose the Highest number for your guessing range. Your number has to be at least 2 more than 0"));
 while (isNaN(intMax) || intMax <= intMin + 1) //forces number to be higher than the minimum, and must be a number
 {
-    intMax = parseInt(prompt("Invalid entry try again. Do it right this time"));
+    intMax = parseInt(prompt("Invalid High number entry try again. Do it right this time"));
 }
 
 /*The following line of code generates the random number to be used in the guessing game.
